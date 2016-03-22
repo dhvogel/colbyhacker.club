@@ -1,0 +1,107 @@
+<html>
+<head>
+        <title>Last Chance Dance</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/videoStretch.css">
+         <link rel="stylesheet" type="text/css" href="css/materialize.css">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/list.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/materialize.js"></script>  
+        
+        <script src="js/videoStretch.js"></script>
+        
+</head>
+<body>
+    <div class="block black" style="color:white">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <span>How It Works</span>
+          </div>
+        </div>
+        <div class="row" style="text-align:center; font-size:20px">You know how this works.<br />Pick 10 People.</span>
+        </div>
+        <div class="row">
+          <div class="col l6 s12" style="margin-bottom:50px">
+            <div class="table-label">
+              Class List
+            </div>
+           <div id="my-cool-sortable-table-wrapper">
+              <table id="table">
+                  <thead>
+                      <th class="sort" data-sort="FName">First Name</th>
+                      <th class="sort" data-sort="LName">Last Name</th>
+                      <th colspan="2"><input type="text" class="search table-search" placeholder="Search" style="color:white"/></th>
+                  </thead>
+                  <tbody class="list">
+                      <tr>
+                          <td class="FName">John </td>
+                          <td class="LName">Doe</td>
+                          <td>x</td>
+                      </tr>
+                      <tr>
+                          <td class="FName">Steve</td>
+                        <td class="LName">Jobs</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td class="FName">D'Glester</td>
+                        <td class="LName">Hardunkichud</td>
+                        <td>x</td>
+                    </tr>
+                    <!-- and so on ...-->
+                </tbody>
+            </table>
+        </div>
+        <script type="text/javascript">
+            var options = {
+                valueNames: [ 'FName', 'LName']
+            };
+            var contactList = new List('my-cool-sortable-table-wrapper', options);
+
+            $("#table tbody tr").on('click', function(){
+               
+               $(this).addClass('selected').siblings().removeClass('selected');    
+               var first = $(this).find('td:eq(0)').html();
+               var last = $(this).find('td:eq(1)').html();
+               if ($(this).css('background-color')=="rgb(0, 128, 0)") {
+                  $(this).css({'color':'white','background-color':'black'}); 
+                  $('#selections tr td:contains(' + first +')').parent().remove();     
+               }
+               else {
+                $(this).css({'color':'white','background-color':'green'});
+                $('#selections tbody tr:last').after('<tr><td>'+first+'</td><td>'+last+'</td></tr>');
+              }
+                   
+          });
+        </script>
+      </div>
+      <div class="col l6 s12">
+        <div class="table-label">
+          Your Selections
+        </div>
+         <table style="color:white; margin-top:25px" id="selections">
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </thead>
+            <tbody class="list">
+              <tr></tr>
+            </tbody>
+        </table>
+
+      </div>
+    </div>
+    <div class="row">
+      <a onclick="alert('submitted');" style="width:100%;text-align:center">Submit</a>
+    </div>
+        
+      </div>
+    </div>
+</body> 
+
+</html>
