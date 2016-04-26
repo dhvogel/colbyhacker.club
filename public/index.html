@@ -26,7 +26,7 @@
       <div class="row center-align" style="padding-top:50px">
         <div class="col l5 s12">
           <div class="row">
-            <div class="card blue">
+            <div class="card blue" onclick="window.location.href='#register-party'">
               <div class="card-content white-text">
                 <span class="card-title">Register a party.</span>
                 <p>According to Colby, <a style="color:#17ee35" href="http://www.colby.edu/administration_cs/student-affairs/drinking.cfm">Registered parties result in fewer problems for hosts, guests, and neighbors.</a> Register your party to make partying an easier process for all involved!</p>
@@ -41,7 +41,7 @@
         </div>
         <div class="col l5 s12">
           <div class="row">
-            <div class="card blue">
+            <div class="card blue" onclick="window.location.href='#view-parties'">
               <div class="card-content white-text">
                 <span class="card-title">View other registered parties.</span>
                 <p>Transparency is an important aspect of the Colby community. View registered parties so you can be aware of what is going on around you!</p>
@@ -50,6 +50,48 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="fluid" id="register-party">
+    <div class="container">
+      <div class="row">
+        <div class="section-header bold">
+          Register your party
+        </div>
+      </div>
+       <div class="row center-align">
+        <form class="row center-align">
+          <div class="row center-align">
+            <div class="input-field offset-s3 col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field offset-s3 col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field offset-s3 col s6">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field offset-s3 col s6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="view-parties">
+    <div class="section-header bold">
+      View other registered parties
     </div>
   </div>
 </body> 

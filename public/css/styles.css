@@ -118,6 +118,11 @@ div {
 .block {
   height:100%;
 }
+
+.fluid {
+  height: auto;
+}
+
 h2 {
   font-family:sans-serif;
 }
