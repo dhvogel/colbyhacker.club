@@ -150,19 +150,22 @@ input:focus {
 }
 
 .sort {
-  padding:8px 10px;
-  border-radius: 6px;
-  border:none;
-  display:inline-block;
-  color:#000;
-  text-decoration: none;
-  background-color: #fff;
-  margin:10px;
-}
-.sort:hover {
+  border: 1px solid #ffffff !important;
   text-decoration: none;
   background-color:#000;
   color:#fff;
+  padding:8px 10px;
+  border:none;
+  display:inline-block;
+  margin:10px;
+}
+.sort:hover {
+  color:#000;
+  text-decoration: none;
+  background-color: #fff;
+  padding:8px 10px;
+  margin:10px;
+
 }
 .sort:focus {
   outline:none;
@@ -204,6 +207,7 @@ input:focus {
 .table-search {
   border-bottom: none !important;
   height:2rem !important; 
+  font-size:20px;
 }
 
 #table tbody tr:hover {
@@ -211,12 +215,29 @@ input:focus {
   color:black;
 }
 
-
 .table-label {
   text-align:center;
   color:white;
   font-size:20px;
   padding-bottom:30px;
+}
+
+.category-button {
+  margin: 10px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  width:100%;
+  height:30px;
+}
+.category-button:hover, .login-button{
+    color:black;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.login-button {
+  border:1px solid #000;
 }
 
 
