@@ -1,4 +1,1 @@
-$( window ).ready(function() {
-    console.log( "ready!" );
-});
-
+console.log("hi!")
