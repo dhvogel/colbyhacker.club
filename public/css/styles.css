@@ -1,21 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:200);
 
-.times {
-  font-family: "Times";
-  font-size:12px;
-}
-
-@font-face {
-    font-family: "FuturaBold";
-    src: url("../fonts/FuturaKoyu.ttf");
-}
-
 body {
     font-family: "Work Sans", sans-serif;
-    color:black;
-}
-
-table {
     color:black;
 }
 
@@ -27,83 +13,15 @@ div {
     color:black;
 }
 
-.nav-wrapper {
-    color:white;
-}
-
-
-.intro-background {
-  background-color:white;
-  position: relative;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  min-width: 25%;
-  min-height: 100%;
-  width: 100%;
-  height: 100%;
-}
-
-.background-video {
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-}
-
-
-.homepage.overlay {
-  background-color:;
-  display:block;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index:1;
-
-}
-
-.bar-item:hover a {
-    background-color:white;
-    color:black;
-}
-
-.bar-item:focus a {
-    background-color:white;
-    color:black;
-}
-
-.bar-item:active a {
-    background-color:white;
-    color:black;
-}
-
-.activeLink {
-    background-color:white;
-    color:black;
-}
-
 .site-title {
-  font-size:60px;
-  text-align: center;
-  padding-top:30px;
+    font-size:60px;
 }
 
 .section-header {
     font-size:40px;
     text-align: center;
     padding-top:30px;
+    text-decoration: bold;
 }
 
 .subsection-header {
@@ -111,153 +29,29 @@ div {
     text-align:center;
 }
 
-.modal {
-    color:black;
-}
-
-.modal a {
-    font-size:22px;
-}
-
 .block {
   height:100%;
+}
+
+.colby-blue {
+  background-color:#002366;
 }
 
 .fluid {
   height: auto;
 }
 
-h2 {
-  font-family:sans-serif;
-}
-.list {
-  font-family:sans-serif;
-  margin:0;
-  padding:20px 0 0;
-  color:white;
-}
-.list > li {
-  display:block;
-  background-color: #eee;
-  padding:10px;
-  box-shadow: inset 0 1px 0 #fff;
-}
-.avatar {
-  max-width: 150px;
-}
-img {
-  max-width: 100%;
-}
-h3 {
-  font-size: 16px;
-  margin:0 0 0.3rem;
-  font-weight: normal;
-  font-weight:bold;
-}
-p {
-  margin:0;
+.circle-img {
+  border-radius:50%;
+  height:150;
+  width:150;
 }
 
-input {
-  border:solid 1px #ccc;
-  border-radius: 5px;
-  padding:7px 14px;
-  margin-bottom:10px
+.member-name {
+  font-size:16px;
+  text-decoration: bold
 }
-input:focus {
-  outline:none !important;
-  border-color:none !important;
+.member-year {
+  font-size:14px;
+  margin-top:-20px;
 }
-
-.sort {
-  border: 1px solid #ffffff !important;
-  text-decoration: none;
-  background-color:#000;
-  color:#fff;
-  padding:8px 10px;
-  border:none;
-  display:inline-block;
-  margin:10px;
-}
-.sort:hover {
-  color:#000;
-  text-decoration: none;
-  background-color: #fff;
-  padding:8px 10px;
-  margin:10px;
-
-}
-.sort:focus {
-  outline:none;
-}
-.sort:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
-}
-.sort.asc:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #fff;
-  content:"";
-  position: relative;
-  top:13px;
-  right:-5px;
-}
-.sort.desc:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #fff;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
-}
-
-.table-search {
-  border-bottom: none !important;
-  height:2rem !important; 
-  font-size:20px;
-}
-
-#table tbody tr:hover {
-  background-color:white;
-  color:black;
-}
-
-.table-label {
-  text-align:center;
-  color:white;
-  font-size:20px;
-  padding-bottom:30px;
-}
-
-.category-button {
-  margin: 10px;
-  color: black;
-  background: transparent;
-  border: 1px solid black;
-  width:100%;
-  height:30px;
-}
-.category-button:hover, .login-button{
-    color:white;
-    background: black;
-    border: 1px solid black;
-}
-
-.login-button {
-  border:1px solid #000;
-}
-
-

@@ -12,140 +12,98 @@
         
 </head>
 <body>
-    <div class="fluid">
+  <div class="block colby-blue white-text">
+    <div class="container" style="position:relative">
+      <div style="position:absolute;transform:translateY(10%);">
+        <div class="row center-align site-title">
+          Colby Hackers
+        </div>
+        <div class="row center-align">
+          <img src="images/colby_logo.png" height="200" width="200">
+        </div>
+        <div class="row center-align section-header flow-text">
+          Dedicated to promoting interest in computing and
+          software devlopment among members of the
+          Colby community
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fluid">
     <div class="container">
-      <div class="row center-align">
-        <div class="site-title bold">
-            Colby Party Registration
-        </div>
+      <div class="row section-header center-align">
+        Members
       </div>
       <div class="row center-align">
-        <div class="section-header">
-            Making it easier for Colby students to register parties on campus.
-        </div>
-      </div>
-      <div class="row center-align" style="padding-top:50px">
-        <div class="col l5 s12">
+        <div class="col l3 m6 s12">
           <div class="row">
-            <div class="card blue" onclick="window.location.href='#register-party'">
-              <div class="card-content white-text">
-                <span class="card-title">Register a party.</span>
-                <p>According to Colby, <a style="color:#17ee35" href="http://www.colby.edu/administration_cs/student-affairs/drinking.cfm">Registered parties result in fewer problems for hosts, guests, and neighbors.</a> Register your party to make partying an easier process for all involved!</p>
-              </div>
+            <div class="row">
+              <img class="circle-img" src="images/Adam.JPG">
+            </div>
+            <div class="row">
+              <p class="member-name">Adam Carlson</p>
+              <p class="member-year">Class of 2019</p>
             </div>
           </div>
         </div>
-        <div class="col l2 s12">
-          <div class="row subsection-header center-align" style="top:50%">
-            OR
+        <div class="col l3 m6 s12">
+          <div class="row">
+            <div class="row">
+              <img class="circle-img" src="images/Beatrice.JPG">
+            </div>
+            <div class="row">
+              <p class="member-name">Beatrice Liang</p>
+              <p class="member-year">Class of 2016</p>
+            </div>
           </div>
         </div>
-        <div class="col l5 s12">
+        <div class="col l3 m6 s12">
           <div class="row">
-            <div class="card blue" onclick="window.location.href='#view-parties'">
-              <div class="card-content white-text">
-                <span class="card-title">View other registered parties.</span>
-                <p>Transparency is an important aspect of the Colby community. View registered parties so you can be aware of what is going on around you!</p>
-              </div>
+            <div class="row">
+              <img class="circle-img" src="images/Bilal.JPG">
+            </div>
+            <div class="row">
+              <p class="member-name">Bilal Ahmad</p>
+              <p class="member-year">Esteemed Alumni ('15)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 m6 s12">
+          <div class="row">
+            <div class="row">
+              <img class="circle-img" src="images/Adam.JPG">
+            </div>
+            <div class="row">
+              <p class="member-name">Adam Carlson</p>
+              <p class="member-year">Class of 2018</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="fluid" id="register-party" style="padding-top:90px">
+  <div class="block colby-blue white-text">
     <div class="container">
-      <div class="row">
-        <div class="section-header bold">
-          Register your party
-        </div>
-      </div>
-       <div class="row">
-        <form class="row">
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="host" type="text" class="validate">
-              <label for="host" style="color:black">Event Host (if serving alcohol, host must be 21)</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="hallroomnum" type="text" class="validate">
-              <label for="hallroomnum">Hall and Room #</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="day" type="text" class="validate">
-              <label for="day">Day of Party</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="estattendance" type="text" class="validate">
-              <label for="estattendance">Estimated Attendance</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="starttime" type="text" class="validate">
-              <label for="breakdowntime">Start Time</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="alcohol" type="text" class="validate">
-              <label for="alcohol">Amount and Type of Alcohol</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="food" type="text" class="validate">
-              <label for="food">Food and Snacks</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="nonalc" type="text" class="validate">
-              <label for="nonalc">Non-Alcoholic Beverages</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="considerations" type="text" class="validate">
-              <label for="considerations">Additional considerations</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="host" type="text" class="validate">
-              <label for="host">Event Host</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="hostphone" type="text" class="validate">
-              <label for="hostphone">Host Phone</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="hostemail" type="text" class="validate">
-              <label for="hostemail">Host Email</label>
-            </div>
-          </div>
-          <button class="offset-s3 col s6 category-button">
-            Submit
-          </button>
-        </form>
+      <div class="row section-header center-align">
+        Events
       </div>
     </div>
   </div>
-  <div class="block" id="view-parties">
-    <div class="section-header bold">
-      View other registered parties
+  <div class="fluid">
+    <div class="container">
+      <div class="row section-header center-align">
+        FAQ
+      </div>
     </div>
   </div>
+  <div class="block colby-blue white-text">
+    <div class="container">
+      <div class="row section-header center-align">
+        Contact
+      </div>
+    </div>
+  </div>
+
 </body> 
 
 </html>
