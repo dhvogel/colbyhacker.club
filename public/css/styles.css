@@ -29,6 +29,10 @@ div {
     text-align:center;
 }
 
+.subsection-text {
+    font-size:22px;
+}
+
 .block {
   height:100%;
 }
