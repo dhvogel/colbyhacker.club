@@ -5,7 +5,7 @@
         <link rel="icon" href="images/computer.png">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/materialize.css">
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <script src="js/jquery.min.js"></script>
         <script src="js/materialize.js"></script>
@@ -13,19 +13,22 @@
 
 </head>
 <body onload="document.getElementById('colby-logo').style.visibility = 'visible'; Materialize.fadeInImage('#colby-logo');">
-  <div class="block colby-blue white-text">
-    <div class="container" style="position:relative">
-      <div style="position:absolute;transform:translateY(10%);">
+  <div class="fluid colby-blue white-text">
+    <div class="container" style="">
+      <div style="padding-top:30px">
         <div class="row center-align site-title">
           Colby Hackers
         </div>
         <div class="row center-align">
-          <img src="images/colby_logo.png" height="200" width="200" style="visibility:hidden" class="hide-on-small-only" id="colby-logo">
+          <img src="images/colby_logo.png" height="200" width="200" style="visibility: visible; opacity: 1;" class="hide-on-small-only" id="colby-logo">
         </div>
         <div class="row center-align section-header flow-text">
           Dedicated to promoting interest in computing and
           software development among members of the
           Colby community
+        </div>
+        <div class="row center-align" style="position:static;padding-top:120px;padding-bottom:30px">
+          <i class="material-icons" style="font-size:50px">keyboard_arrow_down</i>
         </div>
       </div>
     </div>
