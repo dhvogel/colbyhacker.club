@@ -56,7 +56,7 @@ div {
 
 .member-name {
   font-size:18px;
-  text-decoration: bold
+  font-weight:bolder;
 }
 .member-year {
   font-size:16px;
