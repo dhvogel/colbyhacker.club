@@ -58,7 +58,21 @@ div {
   font-size:18px;
   font-weight:bolder;
 }
+
 .member-year {
   font-size:16px;
   margin-top:-20px;
 }
+
+.below-title {
+  margin-top:20px;
+}
+
+.question {
+  font-size:18px;
+}
+
+.answer {
+  font-size: 16px;
+}
+
